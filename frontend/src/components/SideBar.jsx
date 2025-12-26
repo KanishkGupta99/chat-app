@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContext';
 import { ChatContext } from '../../context/ChatContext';
 
-function Sidebar() {
+function SideBar() {
     const {getUsers, users, selectedUser, setSelectedUser, unseenMessages, setUnseenMessages}=useContext(ChatContext)
     const {logout,onlineUsers}=useContext(AuthContext)
 
@@ -67,4 +67,4 @@ mt-5'>
   )
 }
 
-export default Sidebar
+export default SideBar
